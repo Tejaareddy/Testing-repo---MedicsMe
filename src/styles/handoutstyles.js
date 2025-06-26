@@ -1,0 +1,86 @@
+import { StyleSheet, Dimensions } from 'react-native';
+const { width: windowWidth, height: windowHeight } = Dimensions.get('window');
+
+const styles = StyleSheet.create({
+  container: { flex: 1, backgroundColor: '#F5FAFF', paddingHorizontal: 16, paddingTop: 16 },
+  screenTitle: {
+    fontSize: 22,
+    fontWeight: 'bold',
+    marginBottom: 12,
+    color: '#1F2D5A',
+    alignSelf: 'center',
+    fontFamily: 'Poppins-Bold',
+  },
+  card: {
+    backgroundColor: '#fff',
+    borderRadius: 12,
+    padding: 16,
+    marginBottom: 16,
+    shadowColor: '#000',
+    shadowOpacity: 0.05,
+    shadowRadius: 5,
+    shadowOffset: { width: 0, height: 3 },
+    elevation: 3,
+  },
+  cardHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  titleText: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#333',
+    flex: 1,
+    marginRight: 10,
+    fontFamily: 'Poppins-SemiBold',
+  },
+  downloadBtn: {
+    marginTop: 12,
+    backgroundColor: '#4D6EC5',
+    borderRadius: 8,
+    paddingVertical: 10,
+    alignItems: 'center',
+  },
+  downloadText: {
+    color: '#fff',
+    fontWeight: '600',
+    fontSize: 15,
+    fontFamily: 'Poppins-SemiBold',
+  },
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(30,40,60,0.25)',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  modalContent: {
+    width: windowWidth - 24,
+    height: windowHeight - 80,
+    backgroundColor: '#fff',
+    borderRadius: 14,
+    padding: 12,
+    shadowColor: '#000',
+    shadowOpacity: 0.12,
+    shadowRadius: 8,
+    shadowOffset: { width: 0, height: 2 },
+    elevation: 5,
+  },
+  modalHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: 10,
+    borderBottomWidth: 1,
+    borderColor: '#e6eaf0',
+    paddingBottom: 6,
+  },
+  modalTitle: {
+    fontSize: 17,
+    fontWeight: 'bold',
+    color: '#2A5C8D',
+    flex: 1,
+    fontFamily: 'Poppins-Bold',
+  },
+});
+export default styles;

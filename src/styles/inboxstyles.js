@@ -1,0 +1,136 @@
+import { StyleSheet, Dimensions } from 'react-native';
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#F8F9FC',
+  },
+  headerTabsContainer: {
+    backgroundColor: '#2A5C8D',
+    paddingHorizontal: 20,
+    paddingTop: 50,
+    paddingBottom: 60,
+    borderBottomLeftRadius: 20,
+    borderBottomRightRadius: 20,
+  },
+  bottomContainer: {
+    flex: 1,
+    marginTop: -40,
+    backgroundColor: '#fff',
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+    padding: 16,
+  },
+  notificationWrapper: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 3,
+    borderRadius: 10,
+    height: 40,
+    width: 40,
+    backgroundColor: "#ccc",
+  },
+  header: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 20,
+  },
+  headerTitle: {
+    flex: 1,
+    fontSize: 20,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    color: 'white',
+    fontFamily: 'Poppins-Bold',
+  },
+  tabs: {
+    flexDirection: 'row',
+    backgroundColor: '#ffffff',
+    borderRadius: 10,
+    overflow: 'hidden',
+    marginTop: 10,
+  },
+  tabButton: {
+    flex: 1,
+    paddingVertical: 10,
+    alignItems: 'center',
+  },
+  activeTab: {
+    backgroundColor: '#0D3C75',
+  },
+  inactiveTab: {
+    backgroundColor: 'transparent',
+  },
+  tabText: {
+    fontSize: 14,
+    fontFamily: 'Poppins-Regular',
+  },
+  activeTabText: {
+    color: '#ffffff',
+    fontWeight: 'bold',
+    fontFamily: 'Poppins-Bold',
+  },
+  inactiveTabText: {
+    color: '#2B7AF1',
+    fontWeight: '600',
+    fontFamily: 'Poppins-SemiBold',
+  },
+  card: {
+    flexDirection: 'row',
+    backgroundColor: '#fff',
+    borderRadius: 12,
+    padding: 12,
+    marginBottom: 12,
+    alignItems: 'center',
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 2,
+  },
+  leftIcon: {
+    marginRight: 12,
+  },
+  iconCircle: {
+    backgroundColor: "#E3F2FD",
+    padding: 10,
+    borderRadius: 30,
+  },
+  middle: {
+    flex: 1,
+  },
+  sender: {
+    fontWeight: "600",
+    fontSize: 15,
+    color: "#222",
+    marginBottom: 4,
+    fontFamily: 'Poppins-SemiBold',
+  },
+  preview: {
+    fontSize: 13,
+    color: "#777",
+    fontFamily: 'Poppins-Regular',
+  },
+  fabWrapper: {
+    marginTop: 8,
+    marginBottom: 16,
+    alignItems: 'center',
+  },
+  fab: {
+    backgroundColor: '#1A4D8C',
+    borderRadius: 30,
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    elevation: 3,
+  },
+  fabText: {
+    color: '#fff',
+    fontWeight: '600',
+    marginLeft: 8,
+    fontSize: 14,
+    fontFamily: 'Poppins-SemiBold',
+  },
+});
+export default styles;

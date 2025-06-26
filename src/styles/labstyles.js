@@ -1,0 +1,92 @@
+import { StyleSheet } from 'react-native';
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#2A5C8D',
+  },
+  headerTabsContainer: {
+    backgroundColor: '#2A5C8D',
+    paddingHorizontal: 20,
+    paddingTop: 50,
+    paddingBottom: 70,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  headerTitle: {
+    fontSize: 20,
+    fontWeight: '600',
+    color: 'white',
+    alignSelf: 'center',
+    fontFamily: 'Poppins-SemiBold',
+  },
+  notificationWrapper: {
+    backgroundColor: "#ccc",
+    borderRadius: 15,
+    padding: 10,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  bottomContainer: {
+    flex: 1,
+    backgroundColor: '#F1F6FA',
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+    paddingTop: 20,
+    paddingHorizontal: 16,
+  },
+  card: {
+    flexDirection: 'row',
+    backgroundColor: '#fff',
+    borderRadius: 12,
+    padding: 16,
+    marginBottom: 16,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 3,
+  },
+  iconContainer: {
+    width: 50,
+    height: 50,
+    borderRadius: 12,
+    backgroundColor: '#E3EDF7',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: 12,
+  },
+  infoContainer: {
+    flex: 1,
+  },
+  testTitle: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#2A5C8D',
+    marginBottom: 4,
+    fontFamily: 'Poppins-Bold',
+  },
+  testSubtext: {
+    fontSize: 13,
+    color: '#555',
+    marginBottom: 2,
+    fontFamily: 'Poppins-Regular',
+  },
+  metaRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 6,
+  },
+  metaText: {
+    fontSize: 12,
+    color: '#999',
+    fontFamily: 'Poppins-Regular',
+  },
+  emptyText: {
+    textAlign: 'center',
+    marginTop: 30,
+    color: '#888',
+    fontSize: 16,
+    fontFamily: 'Poppins-Regular',
+  },
+});
+export default styles;

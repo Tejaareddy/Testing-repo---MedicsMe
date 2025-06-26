@@ -1,0 +1,1364 @@
+{
+  "emr_forms": {
+      "sample_form": {
+          "tag": "1",
+          "status": null,
+          "speciality_tag": null,
+          "source_tag": "1",
+          "title": "Patient Questionnaire",
+          "instructions": "Default Template - Patient Questionnaire",
+          "dynamic_choices": "true",
+          "choices_used": "HISTORY-PLSTATUS,HISTORY-RADIOLOGY,HISTORY-HOSPITALIZATION,HISTORY-PROCEDURE,COMMON-RELATION,HISTORY-PCARE,COMMON-EDU,COMMON-OCCUPATION,HISTORY-PPD,HISTORY-SMOKESTATUS",
+          "information_tag": null,
+          "externalappointment_status": "",
+          "sections": {
+              "1": {
+                  "tag": "1",
+                  "status": "0",
+                  "instructions": "Any section specific descriptions and/or instructions will go here.",
+                  "ids": null,
+                  "source_type": "static",
+                  "section_type": "static",
+                  "source_tag": "1",
+                  "to_history": null,
+                  "sectioninformation_tag": null,
+                  "title": "CC/HPI",
+                  "section_elements": {
+                      "1": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "CC",
+                          "label": "CC(Describe your Reason for Visit)",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "text_field",
+                          "required": "false",
+                          "value": "",
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "2": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "HPI",
+                          "label": "History of Present Illness",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "text_field",
+                          "required": "false",
+                          "value": "",
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {},
+                          "columns": {}
+                      }
+                  }
+              },
+              "2": {
+                  "tag": "3",
+                  "status": "0",
+                  "instructions": "Any section specific descriptions and/or instructions will go here.",
+                  "ids": null,
+                  "source_type": "static",
+                  "section_type": "static",
+                  "source_tag": "3",
+                  "to_history": null,
+                  "sectioninformation_tag": null,
+                  "title": "Problem List",
+                  "section_elements": {
+                      "1": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "ProblemList",
+                          "label": "Problem List",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "table_add",
+                          "required": "false",
+                          "value": null,
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {
+                              "placeholder": "placeholder"
+                          },
+                          "columns": {
+                              "1": {
+                                  "tag": "StartDate",
+                                  "hidden": null,
+                                  "label": "Date",
+                                  "type": "date_picker",
+                                  "choices": null,
+                                  "required": "false",
+                                  "choice_code": null
+                              },
+                              "2": {
+                                  "tag": "Problem",
+                                  "hidden": null,
+                                  "label": "Problem",
+                                  "type": "text_field",
+                                  "choices": null,
+                                  "required": "true",
+                                  "choice_code": null
+                              },
+                              "3": {
+                                  "tag": "Status",
+                                  "hidden": null,
+                                  "label": "Status",
+                                  "type": "single_choice",
+                                  "choices": "Active^ACUTE^CHRONIC^Dynamic^RESOLVED^STABLE^UNSTABLE^None",
+                                  "required": "false",
+                                  "choice_code": "HISTORY-PLSTATUS"
+                              },
+                              "4": {
+                                  "tag": "Comment",
+                                  "hidden": null,
+                                  "label": "Comments",
+                                  "type": "text_field",
+                                  "choices": null,
+                                  "required": "false",
+                                  "choice_code": null
+                              }
+                          }
+                      }
+                  }
+              },
+              "3": {
+                  "tag": "12",
+                  "status": "0",
+                  "instructions": "Any section specific descriptions and/or instructions will go here.",
+                  "ids": null,
+                  "source_type": "static",
+                  "section_type": "static",
+                  "source_tag": "12",
+                  "to_history": null,
+                  "sectioninformation_tag": null,
+                  "title": "Radiology",
+                  "section_elements": {
+                      "1": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "Radiology",
+                          "label": "Radiology",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "table_add",
+                          "required": "false",
+                          "value": null,
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {
+                              "placeholder": "placeholder"
+                          },
+                          "columns": {
+                              "1": {
+                                  "tag": "OrderDate",
+                                  "hidden": null,
+                                  "label": "Date",
+                                  "type": "date_picker",
+                                  "choices": null,
+                                  "required": "false",
+                                  "choice_code": null
+                              },
+                              "2": {
+                                  "tag": "RadiologyLab",
+                                  "hidden": null,
+                                  "label": "Radiology",
+                                  "type": "single_choice",
+                                  "choices": "AN EKG^ARTERIAL ANGIOGRAM^ARTERIAL DOPPLERS^ARTERIAL SONOGRAM^B/L ARTERIAL LEGS^BARIUM ENEMA^BARIUM SWALLOW^Bilateral Digital Screening Mammo and Tomosynthesis^BIOPSY BREAST^BODY PET-CT SCAN^BONE DENSITY^BONE SCAN^CARDIAC CATHERIZATION^CARDIAC STRESS TEST^CAROTID DUPLEX STUDY^CHEST X-RAY PA AND LATERAL^CT ABDOMEN^CT BRAIN^CT CHEST^CT FACIAL BONES^CT FEMUR^CT HEAD WITHOUT CONTRAST^CT HEAD/BRAIN^CT LOWER EXTREMITY^CT LUMBAR SPINE.^CT NECK^CT PANCREAS^CT PELVIS^CTA ABDOMEN^CTA CHEST^CTA LOWER EXT^CTA NECK^ECG^ECHO TRANSTHORACIC COMPLETE^ECHOCARDIOGRAM^EEG^EKG^ESOPHAGOGASTRODUODENOSCOPY^ESOPHAGRAM^FLUOROSCOPY^FNA thyroid nodule^GASTRIC EMPTYING STUDY^HEPATOBILIARY SCAN^HIDA scan^HOLTER MONITOR^IVP^kNEE^KUB^LS SPINE XRAY^LYMPHOSCINTIGRAPHY^MAMMOGRAM^MRA BRAIN^MRA NECK^MRCP^MRI ABDOMEN^MRI ANKLE^MRI BRAIN^MRI BREAST^MRI CERVICAL SPINE^MRI FOOT^MRI HIPS^MRI KNEE^MRI LUMBAR SPINE^MRI OF ABDOMEN AND MRCP OF ABDOMEN WITH AND WITHOUT CONTRAST^MRI PELVIS^MRI PROSTATE^MRI SHOULDER^MRI THORACIC SPINE^MUGA SCAN^MYOCARDIAL PERFUSION/ GATED WALL MOTION STUDY^MYOVIEW^NERVE CONDUCTION STUDY^NUCLEAR SCAN-LIVER^PET SCAN^PFT'S^SLEEP STUDY^SPIROMETRY^STRESS ECHO^STRESS TEST^STRESS THALLIUM^THYROID NUCLEAR SCAN^TILT TEST^ultrasound left venous doppler^UPPER ENDOSCOPY^UPPER GI SERIES^US ABDOMEN^US ABDOMEN COMPLETE^US ABDOMINAL AORTIC^US AORTIC^US ARTERIAL^US BLADDER^US BREAST BILATERAL^US BREAST LEFT^US BREAST RIGHT^US CAROTIDS^US CHEST^US GALLBLADDER^US LIVER^US PANCREAS^US PELVIC^US RENAL^US RIGHT BREAST AXILLA^US TESTICULAR^US THYROID^US TRANSABDOMINAL PELVIS^US TRANSVAGINAL/PELVIC^US UPPER LEG^US UPPER RIGHT QUADRANT^US VENOUS^V/Q SCAN^VENOUS DOPPLER^X-Ray Chest AP only^XR CHEST PA AND LATERAL^XR KNEE LT^XR LEFT SHOULDER MINIMUM 2 VIEWS^XRAY ABDOMEN^XRAY CERVICAL SPINE^XRAY CHEST^XRAY ELBOW^XRAY FEMUR^XRAY FOOT^XRAY HAND^XRAY HIP^XRAY HUMERUS^XRAY KNEE^XRAY KNEE LT^XRAY LUMBAR SPINE^XRAY PELVIS^XRAY RIBS^XRAY SHOULDER^XRAY SINUS^XRAY SKULL^XRAY THORACIC SPINE^XRAY TIBIA/FIBULA^XRAY WRIST^None",
+                                  "required": "true",
+                                  "choice_code": "HISTORY-RADIOLOGY"
+                              },
+                              "3": {
+                                  "tag": "Result",
+                                  "hidden": null,
+                                  "label": "Result",
+                                  "type": "text_field",
+                                  "choices": null,
+                                  "required": "false",
+                                  "choice_code": null
+                              },
+                              "4": {
+                                  "tag": "Reason",
+                                  "hidden": null,
+                                  "label": "Comments",
+                                  "type": "text_field",
+                                  "choices": null,
+                                  "required": "false",
+                                  "choice_code": null
+                              }
+                          }
+                      }
+                  }
+              },
+              "4": {
+                  "tag": "8-1",
+                  "status": "0",
+                  "instructions": "Any section specific descriptions and/or instructions will go here.",
+                  "ids": null,
+                  "source_type": "static",
+                  "section_type": "static",
+                  "source_tag": "8",
+                  "to_history": null,
+                  "sectioninformation_tag": null,
+                  "title": "Hospitalization",
+                  "section_elements": {
+                      "1": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "Hospitalization",
+                          "label": "Hospitalization",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "table_add",
+                          "required": "false",
+                          "value": null,
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {
+                              "placeholder": "placeholder"
+                          },
+                          "columns": {
+                              "1": {
+                                  "tag": "OrderDate",
+                                  "hidden": null,
+                                  "label": "Date",
+                                  "type": "date_picker",
+                                  "choices": null,
+                                  "required": "false",
+                                  "choice_code": null
+                              },
+                              "2": {
+                                  "tag": "HospNSurgery",
+                                  "hidden": null,
+                                  "label": "Hospitalization",
+                                  "type": "single_choice",
+                                  "choices": "Cancer^Cardiac arrhythmia^Cerebrovascular disease including stroke^CHF^COPD^Diabetes^Fracture femur^Intestinal infectious disease^Ischemic Heart disease^L TKR^Medication problems^MI^Obstetric complications affecting fetus and newborn^Pneumonia^Poisoning^Unstable angina^None",
+                                  "required": "true",
+                                  "choice_code": "HISTORY-HOSPITALIZATION"
+                              },
+                              "3": {
+                                  "tag": "Comments",
+                                  "hidden": null,
+                                  "label": "Comments",
+                                  "type": "text_field",
+                                  "choices": null,
+                                  "required": "false",
+                                  "choice_code": null
+                              }
+                          }
+                      }
+                  }
+              },
+              "5": {
+                  "tag": "8-2",
+                  "status": "0",
+                  "instructions": "Any section specific descriptions and/or instructions will go here.",
+                  "ids": null,
+                  "source_type": "static",
+                  "section_type": "static",
+                  "source_tag": "8",
+                  "to_history": null,
+                  "sectioninformation_tag": null,
+                  "title": "Surgeries",
+                  "section_elements": {
+                      "1": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "Surgeries",
+                          "label": "Surgeries",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "table_add",
+                          "required": "false",
+                          "value": null,
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {
+                              "placeholder": "placeholder"
+                          },
+                          "columns": {
+                              "1": {
+                                  "tag": "OrderDate",
+                                  "hidden": null,
+                                  "label": "Date",
+                                  "type": "date_picker",
+                                  "choices": null,
+                                  "required": "false",
+                                  "choice_code": null
+                              },
+                              "2": {
+                                  "tag": "HospNSurgery",
+                                  "hidden": null,
+                                  "label": "Surgery",
+                                  "type": "single_choice",
+                                  "choices": "Appendectomy^Breast biopsy^Broken bone repair^C-section^Cardiac endarterectomy^Cataract removal^Cholecystectomy^Circumcision^Coronary artery bypass graft^Dilation and curettage^Hemorrhoidectomy^Hysterectomy^Hysteroscopy^Inguinal hernia repair^Joint replacement^Low back pain surgery^Lung surgery^Mastectomy^Partial colectomy^Prostatectomy^Stent procedure^Tonsillectomy^None",
+                                  "required": "true",
+                                  "choice_code": "HISTORY-PROCEDURE"
+                              },
+                              "3": {
+                                  "tag": "Comments",
+                                  "hidden": null,
+                                  "label": "Comments",
+                                  "type": "text_field",
+                                  "choices": null,
+                                  "required": "false",
+                                  "choice_code": null
+                              }
+                          }
+                      }
+                  }
+              },
+              "6": {
+                  "tag": "5",
+                  "status": "0",
+                  "instructions": "Any section specific descriptions and/or instructions will go here.",
+                  "ids": null,
+                  "source_type": "static",
+                  "section_type": "static",
+                  "source_tag": "5",
+                  "to_history": null,
+                  "sectioninformation_tag": null,
+                  "title": "Family History",
+                  "section_elements": {
+                      "1": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "Family Medical History",
+                          "label": "Family Medical History",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "table_add",
+                          "required": "false",
+                          "value": null,
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {
+                              "placeholder": "placeholder"
+                          },
+                          "columns": {
+                              "1": {
+                                  "tag": "Relation",
+                                  "hidden": null,
+                                  "label": "Relation",
+                                  "type": "single_choice",
+                                  "choices": "Aunt^Brother^Daughter^Father^Guardian^Mother^Sister^Son^None",
+                                  "required": "true",
+                                  "choice_code": "COMMON-RELATION"
+                              },
+                              "2": {
+                                  "tag": "Health",
+                                  "hidden": null,
+                                  "label": "Problem",
+                                  "type": "text_field",
+                                  "choices": null,
+                                  "required": "false",
+                                  "choice_code": null
+                              },
+                              "3": {
+                                  "tag": "Age",
+                                  "hidden": null,
+                                  "label": "Age",
+                                  "type": "text_field",
+                                  "choices": null,
+                                  "required": "false",
+                                  "choice_code": null
+                              },
+                              "4": {
+                                  "tag": "Status",
+                                  "hidden": null,
+                                  "label": "Status",
+                                  "type": "single_choice",
+                                  "choices": "Living^Deceased",
+                                  "required": "true",
+                                  "choice_code": null
+                              },
+                              "5": {
+                                  "tag": "Comments",
+                                  "hidden": null,
+                                  "label": "Comments",
+                                  "type": "text_field",
+                                  "choices": null,
+                                  "required": "false",
+                                  "choice_code": null
+                              }
+                          }
+                      }
+                  }
+              },
+              "7": {
+                  "tag": "9",
+                  "status": "0",
+                  "instructions": "Any section specific descriptions and/or instructions will go here.",
+                  "ids": null,
+                  "source_type": "static",
+                  "section_type": "static",
+                  "source_tag": "9",
+                  "to_history": null,
+                  "sectioninformation_tag": null,
+                  "title": "Preventive Care",
+                  "section_elements": {
+                      "1": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "Preventive Care",
+                          "label": "Preventive Care",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "table_add",
+                          "required": "false",
+                          "value": null,
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {
+                              "placeholder": "placeholder"
+                          },
+                          "columns": {
+                              "1": {
+                                  "tag": "PreventiveCare",
+                                  "hidden": null,
+                                  "label": "Preventive_Care",
+                                  "type": "single_choice",
+                                  "choices": "ANNUAL CLINICAL BREAST EXAM^ANNUAL PAP SMEAR^ANNUAL WELLNESS^BIENNIAL SCREENING MAMMOGRAM^BREAST SPOT COMPRESSION^BREAST ULTRASOUND^COLONOSCOPY^CYSTOSCOPY^FOBT^PAP SMEAR^PSA^Refused; flu vaccine^None",
+                                  "required": "true",
+                                  "choice_code": "HISTORY-PCARE"
+                              },
+                              "2": {
+                                  "tag": "DateGiven",
+                                  "hidden": null,
+                                  "label": "Date",
+                                  "type": "date_picker",
+                                  "choices": null,
+                                  "required": "false",
+                                  "choice_code": null
+                              },
+                              "3": {
+                                  "tag": "Comments",
+                                  "hidden": null,
+                                  "label": "Comments",
+                                  "type": "text_field",
+                                  "choices": null,
+                                  "required": "false",
+                                  "choice_code": null
+                              }
+                          }
+                      }
+                  }
+              },
+              "8": {
+                  "tag": "13-1",
+                  "status": "0",
+                  "instructions": "Any section specific descriptions and/or instructions will go here.",
+                  "ids": null,
+                  "source_type": "static",
+                  "section_type": "static",
+                  "source_tag": "13",
+                  "to_history": null,
+                  "sectioninformation_tag": null,
+                  "title": "Allergies",
+                  "section_elements": {
+                      "1": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "Allergies",
+                          "label": "Allergies",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "table_add",
+                          "required": "false",
+                          "value": null,
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {
+                              "placeholder": "placeholder"
+                          },
+                          "columns": {
+                              "1": {
+                                  "tag": "AllergyType",
+                                  "hidden": null,
+                                  "label": "Type",
+                                  "type": "single_choice",
+                                  "choices": "Allergy Group^Drug Allergy^Food/Other Allergy^Latex Allergy^Sensitivity Allergy",
+                                  "required": "false",
+                                  "choice_code": null
+                              },
+                              "2": {
+                                  "tag": "Allergy",
+                                  "hidden": null,
+                                  "label": "Allergic To",
+                                  "type": "text_field",
+                                  "choices": null,
+                                  "required": "true",
+                                  "choice_code": null
+                              },
+                              "3": {
+                                  "tag": "StartDate",
+                                  "hidden": null,
+                                  "label": "Start Date",
+                                  "type": "date_picker",
+                                  "choices": null,
+                                  "required": "false",
+                                  "choice_code": null
+                              },
+                              "4": {
+                                  "tag": "Reaction",
+                                  "hidden": null,
+                                  "label": "Reaction",
+                                  "type": "text_field",
+                                  "choices": null,
+                                  "required": "false",
+                                  "choice_code": null
+                              },
+                              "5": {
+                                  "tag": "Severity",
+                                  "hidden": null,
+                                  "label": "Severity",
+                                  "type": "single_choice",
+                                  "choices": "Mild^Moderate^Severe",
+                                  "required": "false",
+                                  "choice_code": null
+                              },
+                              "6": {
+                                  "tag": "Status",
+                                  "hidden": null,
+                                  "label": "Status",
+                                  "type": "single_choice",
+                                  "choices": "Active^Inactive",
+                                  "required": "false",
+                                  "choice_code": null
+                              },
+                              "7": {
+                                  "tag": "Comments",
+                                  "hidden": null,
+                                  "label": "Comments",
+                                  "type": "text_field",
+                                  "choices": null,
+                                  "required": "false",
+                                  "choice_code": null
+                              }
+                          }
+                      }
+                  }
+              },
+              "9": {
+                  "tag": "13-2",
+                  "status": "0",
+                  "instructions": "Any section specific descriptions and/or instructions will go here.",
+                  "ids": null,
+                  "source_type": "static",
+                  "section_type": "static",
+                  "source_tag": "13",
+                  "to_history": null,
+                  "sectioninformation_tag": null,
+                  "title": "Medications",
+                  "section_elements": {
+                      "1": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "Medications",
+                          "label": "Medications",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "table_add",
+                          "required": "false",
+                          "value": null,
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {
+                              "placeholder": "placeholder"
+                          },
+                          "columns": {
+                              "1": {
+                                  "tag": "DrugName",
+                                  "hidden": null,
+                                  "label": "Medication",
+                                  "type": "text_field",
+                                  "choices": null,
+                                  "required": "true",
+                                  "choice_code": null
+                              },
+                              "2": {
+                                  "tag": "StartDate",
+                                  "hidden": null,
+                                  "label": "Start Date",
+                                  "type": "date_picker",
+                                  "choices": null,
+                                  "required": "false",
+                                  "choice_code": null
+                              },
+                              "3": {
+                                  "tag": "SIGData",
+                                  "hidden": null,
+                                  "label": "Direction",
+                                  "type": "text_field",
+                                  "choices": null,
+                                  "required": "false",
+                                  "choice_code": null
+                              },
+                              "4": {
+                                  "tag": "Notes",
+                                  "hidden": null,
+                                  "label": "Comments",
+                                  "type": "text_field",
+                                  "choices": null,
+                                  "required": "false",
+                                  "choice_code": null
+                              }
+                          }
+                      }
+                  }
+              },
+              "10": {
+                  "tag": "10",
+                  "status": "0",
+                  "instructions": "Any section specific descriptions and/or instructions will go here.",
+                  "ids": null,
+                  "source_type": "static",
+                  "section_type": "static",
+                  "source_tag": "10",
+                  "to_history": null,
+                  "sectioninformation_tag": null,
+                  "title": "Immunizations",
+                  "section_elements": {
+                      "1": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "Immunizations",
+                          "label": "Immunizations",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "table_add",
+                          "required": "false",
+                          "value": null,
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {
+                              "placeholder": "placeholder"
+                          },
+                          "columns": {
+                              "1": {
+                                  "tag": "VaccineName",
+                                  "hidden": null,
+                                  "label": "Vaccine",
+                                  "type": "text_field",
+                                  "choices": null,
+                                  "required": "true",
+                                  "choice_code": null
+                              },
+                              "2": {
+                                  "tag": "DateGiven",
+                                  "hidden": null,
+                                  "label": "Date",
+                                  "type": "date_picker",
+                                  "choices": null,
+                                  "required": "false",
+                                  "choice_code": null
+                              },
+                              "3": {
+                                  "tag": "Comments",
+                                  "hidden": null,
+                                  "label": "Comments",
+                                  "type": "text_field",
+                                  "choices": null,
+                                  "required": "false",
+                                  "choice_code": null
+                              }
+                          }
+                      }
+                  }
+              },
+              "11": {
+                  "tag": "4",
+                  "status": "0",
+                  "instructions": "Any section specific descriptions and/or instructions will go here.",
+                  "ids": null,
+                  "source_type": "static",
+                  "section_type": "static",
+                  "source_tag": "4",
+                  "to_history": null,
+                  "sectioninformation_tag": null,
+                  "title": "Social/Lifestyle",
+                  "section_elements": {
+                      "1": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "CurrentlyMarriedYN",
+                          "label": "Marital History",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "yn_switch",
+                          "required": "false",
+                          "value": "None",
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "2": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "MaritalStatus",
+                          "label": "Marital Status",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "single_choice",
+                          "required": "false",
+                          "value": null,
+                          "choices": "Single^Married^Divorced^Separated^Widowed",
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "3": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "CurrentMarriedComments",
+                          "label": "Comments",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "text_field",
+                          "required": "false",
+                          "value": null,
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "4": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "LivingWillYN",
+                          "label": "Living Will",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "yn_switch",
+                          "required": "false",
+                          "value": "None",
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "5": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "LivingWillComments",
+                          "label": "Living Will Comments",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "text_field",
+                          "required": "false",
+                          "value": null,
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "6": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "POAYN",
+                          "label": "Power of Attorney",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "yn_switch",
+                          "required": "false",
+                          "value": "None",
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "7": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "POAComments",
+                          "label": "Power of Attorney Comments",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "text_field",
+                          "required": "false",
+                          "value": null,
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "8": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "ForiegnYN",
+                          "label": "Foreign Travel",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "yn_switch",
+                          "required": "false",
+                          "value": "None",
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "9": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "Where",
+                          "label": "Where",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "text_field",
+                          "required": "false",
+                          "value": null,
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "10": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "When",
+                          "label": "When",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "text_field",
+                          "required": "false",
+                          "value": null,
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "11": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "HighestEducationLevel",
+                          "label": "Highest Education",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "single_choice",
+                          "required": "false",
+                          "value": null,
+                          "choices": "College^High School^Post Graduate School^Up to Grade 12^ytyt^None",
+                          "hidden": null,
+                          "choice_code": "COMMON-EDU",
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "12": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "EmploymentStatus",
+                          "label": "Employment Status",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "single_choice",
+                          "required": "false",
+                          "value": null,
+                          "choices": "employed full-time^employed part-time^fully retired^not employed^self-employed^semi retired^student^None",
+                          "hidden": null,
+                          "choice_code": "COMMON-OCCUPATION",
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "13": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "Status",
+                          "label": "Smoke Status",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "single_choice",
+                          "required": "false",
+                          "value": null,
+                          "choices": "Current every day smoker^Current some day smoker^Former smoker^Heavy tobacco smoker^Light cigarette smoker^Light tobacco smoker^Never smoker^Smoker, current status unknown^Unknown if ever smoked^None",
+                          "hidden": null,
+                          "choice_code": "HISTORY-SMOKESTATUS",
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "14": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "Started",
+                          "label": "Started on",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "date_picker",
+                          "required": "false",
+                          "value": null,
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "15": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "Number",
+                          "label": "Number",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "text_field",
+                          "required": "false",
+                          "value": null,
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "16": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "PPD",
+                          "label": "PPD/Cigarette",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "single_choice",
+                          "required": "false",
+                          "value": null,
+                          "choices": "Cigarettes per day^Cigars a day^Electronic Cigarettes^Pack per day^None",
+                          "hidden": null,
+                          "choice_code": "HISTORY-PPD",
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "17": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "Days",
+                          "label": "Days",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "text_field",
+                          "required": "false",
+                          "value": "0",
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "18": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "SelDaysWeeks",
+                          "label": "Days/Weeks",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "single_choice",
+                          "required": "false",
+                          "value": null,
+                          "choices": "day(s)^week(s)^month(s)^year(s)",
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "19": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "TobaccoYN",
+                          "label": "Tobacco",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "yn_switch",
+                          "required": "false",
+                          "value": "None",
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "20": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "TobaccoComments",
+                          "label": "Tobacco Comments",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "text_field",
+                          "required": "false",
+                          "value": null,
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "21": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "AlcoholYN",
+                          "label": "Alcohol",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "yn_switch",
+                          "required": "false",
+                          "value": "None",
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "22": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "AlcoholComments",
+                          "label": "Alcohol Comments",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "text_field",
+                          "required": "false",
+                          "value": null,
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "23": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "DrugYN",
+                          "label": "Recreational Drugs",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "yn_switch",
+                          "required": "false",
+                          "value": "None",
+                          "choices": "day(s)^week(s)^month(s)^year(s)",
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "24": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "DrugComments",
+                          "label": "Recreational Drugs Comments",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "text_field",
+                          "required": "false",
+                          "value": null,
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "25": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "CoffeeYN",
+                          "label": "Coffee",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "yn_switch",
+                          "required": "false",
+                          "value": "None",
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "26": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "CoffeeComments",
+                          "label": "Coffee Comments",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "text_field",
+                          "required": "false",
+                          "value": null,
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "27": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "ExcerciseYN",
+                          "label": "Physical Exercise",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "yn_switch",
+                          "required": "false",
+                          "value": "None",
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "28": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "ExcerciseComments",
+                          "label": "Exercise Comments",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "text_field",
+                          "required": "false",
+                          "value": null,
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "29": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "TeaYN",
+                          "label": "Tea",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "yn_switch",
+                          "required": "false",
+                          "value": "None",
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {},
+                          "columns": {}
+                      },
+                      "30": {
+                          "sectionid": null,
+                          "sectionname": null,
+                          "istranscript": null,
+                          "tag": "TeaComments",
+                          "label": "Tea Comments",
+                          "displaytext": null,
+                          "to_history": null,
+                          "type": "text_field",
+                          "required": "false",
+                          "value": null,
+                          "choices": null,
+                          "hidden": null,
+                          "choice_code": null,
+                          "table_values": {},
+                          "columns": {}
+                      }
+                  }
+              }
+          },
+          "parent_source_tag": null
+      }
+  },
+  "medicspremier_forms": {
+      "1": {
+          "info": {
+              "instructions": "I, the Undersigned, authorize: Innovative Therapeutic Services to allow the use and sharing of protected health information about:",
+              "title": "SCHOOL RELEASE FORM",
+              "version": "1"
+          },
+          "addedToOrder": "1",
+          "send_emr": "1",
+          "questions": {
+              "1": {
+                  "choices": "",
+                  "label": "",
+                  "placeholder": null,
+                  "required": "",
+                  "section_info": "Effective Date^Once completed and signed, this authorization will remain in effect until one year from date signed.",
+                  "type": "new_section",
+                  "tag": "opudu",
+                  "user_value": null
+              },
+              "2": {
+                  "choices": "Copies of Records^Discharge Summaries^Consultation^School Visitation^Immunization Records^Psychiatric Records",
+                  "label": "The Mental Health Information Authorized for Release includes: (check all that apply)",
+                  "placeholder": null,
+                  "required": "false",
+                  "section_info": "",
+                  "type": "multiple_choice_long",
+                  "tag": "20810",
+                  "user_value": null
+              },
+              "3": {
+                  "choices": "",
+                  "label": "Other Information",
+                  "placeholder": null,
+                  "required": "false",
+                  "section_info": "",
+                  "type": "text_area",
+                  "tag": "nntue",
+                  "user_value": null
+              },
+              "4": {
+                  "choices": "",
+                  "label": "",
+                  "placeholder": null,
+                  "required": "",
+                  "section_info": "Person/Organization Authorization Information:^Person/Organization authorized to receive your information:",
+                  "type": "new_section",
+                  "tag": "yfzhm",
+                  "user_value": null
+              },
+              "5": {
+                  "choices": "",
+                  "label": "School",
+                  "placeholder": null,
+                  "required": "false",
+                  "section_info": "",
+                  "type": "text_field",
+                  "tag": "c42tw",
+                  "user_value": null
+              },
+              "6": {
+                  "choices": "",
+                  "label": "Address",
+                  "placeholder": null,
+                  "required": "false",
+                  "section_info": "",
+                  "type": "text_area",
+                  "tag": "rrlfo",
+                  "user_value": null
+              },
+              "7": {
+                  "choices": "",
+                  "label": "Phone#",
+                  "placeholder": null,
+                  "required": "false",
+                  "section_info": "",
+                  "type": "text_field",
+                  "tag": "vf9qh",
+                  "user_value": null
+              },
+              "8": {
+                  "choices": "",
+                  "label": "Fax#",
+                  "placeholder": null,
+                  "required": "false",
+                  "section_info": "",
+                  "type": "text_field",
+                  "tag": "dhfa6",
+                  "user_value": null
+              },
+              "9": {
+                  "choices": "",
+                  "label": "",
+                  "placeholder": null,
+                  "required": "",
+                  "section_info": "Purpose of Release:^Coordination of Care",
+                  "type": "new_section",
+                  "tag": "g62hg",
+                  "user_value": null
+              },
+              "10": {
+                  "choices": "I do not wish to have ANY information released to the client's school. Please sign below.",
+                  "label": "Release to School",
+                  "placeholder": null,
+                  "required": "false",
+                  "section_info": "",
+                  "type": "multiple_choice_long",
+                  "tag": "tcxn5",
+                  "user_value": null
+              },
+              "11": {
+                  "choices": "",
+                  "label": "",
+                  "placeholder": null,
+                  "required": "",
+                  "section_info": "Disclaimer^I understand that I can revoke or cancel this authorization at any time by sending a letter to the Privacy Officer of the organization listed above and which is to supply this information. If I do this it will prevent any releases after the date it is received but cannot change the fact that some information may have been sent or shared before that date. I understand that I do not have to sign this authorization and that my refusal to sign will not affect my abilities to obtain treatment from the professional or facility listed above, nor will it affect my eligibility for benefits. I understand that I may inspect and have a copy of the health information described in this authorization. I understand that if the person or entity that receives the information is not a health care provider or health plan covered by federal privacy regulations, the information described above may be re-disclosed and no longer protected by those regulations. I understand that this professional or facility will receive compensation for the use or disclosure of my health information. The arrangement has been explained to me and I understand and accept it. I affirm that everything in this form that was not clear to me has been explained and I believe I now understand all of it.  I acknowledge that the information to be used or disclosed as a result of this Authorization may include records that are protected by other federal and/or state laws applicable to substance abuse. I specifically authorize the release of confidential information relating to drug and/or alcohol abuse, psychiatric, HIV results and or AIDS information. The recipient of drug and/or alcohol abuse information disclosed as a result of this Authorization will need my further written authorization to re-disclose this information. 42 CFR 2.32 restricts any use of this information to criminally investigate or prosecute any alcohol or drug abuse patient.",
+                  "type": "new_section",
+                  "tag": "ovgc8",
+                  "user_value": null
+              },
+              "12": {
+                  "choices": "",
+                  "label": "Client/Parent/Guardian E-Signature",
+                  "placeholder": null,
+                  "required": "false",
+                  "section_info": "",
+                  "type": "text_field",
+                  "tag": "2qsl8",
+                  "user_value": null
+              },
+              "13": {
+                  "choices": "",
+                  "label": "Date",
+                  "placeholder": null,
+                  "required": "false",
+                  "section_info": "",
+                  "type": "date_picker",
+                  "tag": "l063g",
+                  "user_value": null
+              }
+          }
+      }
+  }
+}
